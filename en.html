@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top Beauty | Silk Orchid Sanctuary & Makeup Academy</title>
+<link rel="icon" href="top-beauty-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<header class="top"><div class="wrap bar"><a class="brand" href="#home"><img src="top-beauty-logo.png" alt="Top Beauty"><span><b>TOP BEAUTY</b><small>MAKEUP ACADEMY</small></span></a><nav class="links" id="menu"><a data-v="courses" href="#courses">Courses</a><a data-v="about" href="#about">About us</a><a data-v="instructors" href="#instructors">Instructors</a><a data-v="book" href="#book">Contact / Book now</a><a class="rit" href="#home#builder">Build Your Course</a><div class="dd" id="dd"><button type="button" id="ddb" aria-expanded="false">More <i>▾</i></button><div class="ddm"><a href="#home#shop">Shop</a><a href="#home#sanctuary">FAQ</a><a href="#home#stories">Student Stories</a></div></div></nav><div class="acts"><button class="pillbtn" id="cartBtn"><span class="dot" id="cartN">1</span><span>Bag</span></button><a class="langl" id="otherlang" data-to="ar.html" href="ar.html">عربي</a><button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button></div></div></header>
+<main>
+    <!-- ================= HOME PAGE ================= -->
+    <section class="view" id="v-home">
+
+      <!-- Hero (top of home) -->
+      <div class="wrap hero">
+        <div class="hl">
+          <span class="chip">Top Beauty Academy · Riyadh · Jeddah · Khobar</span>
+          <h1 class="disp"><span>Master makeup like a pro,</span><span class="grad">and launch your career with confidence.</span></h1>
+          <p class="lead">Professional makeup courses with hands-on training and a certified diploma, inside a calm sanctuary that blends learning with self-care—plus Top Beauty’s clean skincare to complete your journey.</p>
+          <div class="ctas">
+            <a class="btn big" href="#courses"><span>Explore the Courses</span> <i class="arr">←</i></a>
+            <a class="btn o big" href="#home#builder">Design Your Course</a>
+          </div>
+          <div class="stats">
+            <div>
+              <b class="disp">8</b>
+              <span>Seats per class, max</span>
+            </div>
+            <div>
+              <b class="disp">3</b>
+              <span>Branches across KSA</span>
+            </div>
+            <div>
+              <b class="disp">4</b>
+              <span>Courses, beginner to pro</span>
+            </div>
+          </div>
+        </div>
+        <div class="arch">
+          <img src="orchid-hero.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Build-your-course tool (options come from script.js) -->
+      <div class="builder" id="builder">
+        <div class="wrap">
+          <div class="head">
+            <div class="eyebrow">BUILD YOUR COURSE</div>
+            <h2 class="disp">Design a course around your ambition</h2>
+            <p>Pick your focus, class format and extras—see your price instantly before you book.</p>
+          </div>
+          <div class="bgrid">
+            <div class="panel">
+              <div class="step">01. What is your focus?</div>
+              <div class="opts c3" id="g1"></div>
+              <div class="step">02. Choose your class format</div>
+              <div class="opts c3" id="g2"></div>
+              <div class="step">03. Add extras to level up</div>
+              <div class="opts c2" id="g3"></div>
+            </div>
+            <aside class="sum">
+              <div class="sh">
+                <small>YOUR COURSE</small>
+                <h3 class="disp" id="sT"></h3>
+              </div>
+              <ul>
+                <li><span>Class format</span><b id="sM"></b></li>
+                <li><span>Extras</span><b id="sE"></b></li>
+                <li><span>Certificate</span><b>Certified · Included</b></li>
+              </ul>
+              <div class="tot">
+                <small>Total (incl. 15% VAT)</small>
+                <strong class="mono" id="sP"></strong>
+                <small id="sQ"></small>
+                <em>tamara · tabby</em>
+              </div>
+              <a class="btn w" href="#book">Reserve this course now</a>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop section (products come from script.js) -->
+      <div class="wrap sec" id="shop">
+        <div class="rowhead">
+          <div>
+            <div class="eyebrow">TOP BEAUTY SHOP</div>
+            <h2 class="disp">Products we train with—yours to take home</h2>
+          </div>
+          <button class="pillbtn" id="cartBtn2"><span>View shopping bag</span> (<span id="cartN2">1</span>)</button>
+        </div>
+        <div class="g4" id="prods"></div>
+      </div>
+
+      <!-- FAQ section (questions come from script.js) -->
+      <div class="wrap sec two" id="sanctuary">
+        <div>
+          <div class="eyebrow">BEFORE YOU ENROL</div>
+          <h2 class="disp">Common questions about our courses</h2>
+          <div id="faq"></div>
+        </div>
+        <div class="photo">
+          <img src="orchid-spa.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Student stories (quotes come from script.js) -->
+      <div class="stories" id="stories">
+        <div class="wrap">
+          <div class="rowhead">
+            <div>
+              <div class="eyebrow">STUDENT STORIES</div>
+              <h2 class="disp">Success stories that started in our classroom</h2>
+            </div>
+            <div class="arrows">
+              <button id="prev" aria-label="prev">‹</button>
+              <button id="next" aria-label="next">›</button>
+            </div>
+          </div>
+          <div class="track" id="track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COURSES PAGE ================= -->
+    <section class="view" id="v-courses">
+
+      <!-- Page intro (text + image) -->
+      <div class="wrap phero">
+        <div>
+          <div class="eyebrow">TOP BEAUTY ACADEMY</div>
+          <h2 class="disp">From makeup passion to a career that pays</h2>
+          <p>Four courses that take you from your first brush to your first paying client. Pick your starting point—we’ll walk the rest with you.</p>
+          <div class="chips">
+            <span class="chip">Certified</span>
+            <span class="chip">Real models</span>
+            <span class="chip">Only 8 seats</span>
+          </div>
+          <div class="ctas">
+            <a class="btn big" href="#book">Reserve your seat</a>
+            <a class="btn o big" href="#courses#course-list">Compare courses</a>
+          </div>
+        </div>
+        <div class="pimgx">
+          <img src="ac-bottles.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Course cards -->
+      <div class="wrap sec" id="course-list">
+        <div class="head">
+          <div class="eyebrow">CHOOSE YOUR COURSE</div>
+          <h2 class="disp">Which artist do you want to become?</h2>
+          <p>A course for every goal, and a result you can see.</p>
+        </div>
+
+        <!-- Course cards grid -->
+        <div class="cgrid">
+          <article class="cc">
+            <img src="ac-bottles.jpg" alt="Makeup Basics" loading="lazy">
+            <div class="cb">
+              <span class="tag">Beginner · 4 weeks</span>
+              <h3>Makeup Basics</h3>
+              <p class="hk">Start from zero, finish with a look you’re proud of</p>
+              <ul class="pts">
+                <li>Skin prep & reading your skin type</li>
+                <li>Foundation & concealer, mastered</li>
+                <li>Eyes & lips for everyday looks</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">SAR 2,800</b>
+                <a class="btn" href="#book">Book now</a>
+              </div>
+            </div>
+          </article>
+          <article class="cc">
+            <img src="about_uss.jpg" alt="Bridal & Evening Makeup" loading="lazy">
+            <div class="cb">
+              <span class="tag">Intermediate · 6 weeks</span>
+              <h3>Bridal & Evening Makeup</h3>
+              <p class="hk">Looks that stay flawless from the entrance to the last photo</p>
+              <ul class="pts">
+                <li>The bridal look, step by step</li>
+                <li>Contour & highlight for evenings</li>
+                <li>Lash application & long wear</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">SAR 4,500</b>
+                <a class="btn" href="#book">Book now</a>
+              </div>
+            </div>
+          </article>
+          <article class="cc">
+            <img src="ac-bath.jpg" alt="Skincare & Skin Tones" loading="lazy">
+            <div class="cb">
+              <span class="tag">All levels · 2 weeks</span>
+              <h3>Skincare & Skin Tones</h3>
+              <p class="hk">Great skin is the base of every great look</p>
+              <ul class="pts">
+                <li>Matching shades to every skin tone</li>
+                <li>A prep routine for the Gulf climate</li>
+                <li>Products for every skin type</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">SAR 1,900</b>
+                <a class="btn" href="#book">Book now</a>
+              </div>
+            </div>
+          </article>
+          <article class="cc">
+            <img src="ac-pool.jpg" alt="Professional Makeup Artist Diploma" loading="lazy">
+            <div class="cb">
+              <span class="tag">Advanced · 8 weeks</span>
+              <h3>Professional Makeup Artist Diploma</h3>
+              <p class="hk">The full program for those who want to make a name</p>
+              <ul class="pts">
+                <li>A portfolio photoshoot</li>
+                <li>Pricing & client-handling skills</li>
+                <li>Intensive practice on real models</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">SAR 8,900</b>
+                <a class="btn" href="#book">Book now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- What is included -->
+      <div class="band">
+        <div class="wrap">
+          <div class="head">
+            <div class="eyebrow">INCLUDED</div>
+            <h2 class="disp">Everything you need—included</h2>
+            <p>No surprises, no hidden costs.</p>
+          </div>
+
+          <!-- Feature cards -->
+          <div class="inc">
+            <div>
+              <h3>A clean tool kit</h3>
+              <p>Every student gets her own sanitised kit.</p>
+            </div>
+            <div>
+              <h3>Real models</h3>
+              <p>You practise from week one, not at the end.</p>
+            </div>
+            <div>
+              <h3>Certificate</h3>
+              <p>Add it to your professional portfolio.</p>
+            </div>
+            <div>
+              <h3>Pro brands</h3>
+              <p>Products that suit Gulf skin and climate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">YOUR JOURNEY</div>
+          <h2 class="disp">From zero to your first client in 4 steps</h2>
+          <p></p>
+        </div>
+
+        <!-- Journey steps -->
+        <div class="steps">
+          <div>
+            <b>1</b>
+            <h3>Learn</h3>
+            <p>Step by step, in clear language.</p>
+          </div>
+          <div>
+            <b>2</b>
+            <h3>Practise</h3>
+            <p>On real models.</p>
+          </div>
+          <div>
+            <b>3</b>
+            <h3>Graduate</h3>
+            <p>With a certificate.</p>
+          </div>
+          <div>
+            <b>4</b>
+            <h3>Launch</h3>
+            <p>With a portfolio and your first clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call-to-action banner -->
+      <div class="wrap cta">
+        <div class="in">
+          <h2 class="disp">Your seat is waiting—before the class fills</h2>
+          <p>Only 8 students per class. Book now, or drop in for a free visit.</p>
+          <a class="btn big" href="#book">Reserve your seat now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT US PAGE ================= -->
+    <section class="view" id="v-about">
+
+      <!-- Page intro (text + image) -->
+      <div class="wrap phero">
+        <div>
+          <div class="eyebrow">ABOUT US</div>
+          <h2 class="disp">We build makeup artists, not just students</h2>
+          <p>At Top Beauty Academy we turn your love of makeup into a real career—step by step, in clear language, with modern techniques made for Gulf skin and climate.</p>
+          <p>We teach inside a calm, bright sanctuary, with professional brands, in small groups so every talent gets attention.</p>
+          <div class="ctas">
+            <a class="btn big" href="#courses">See the courses</a>
+            <a class="btn o big" href="#book">Book a free visit</a>
+          </div>
+        </div>
+        <div class="pimgx">
+          <img src="about_uss.jpg" alt="">
+        </div>
+      </div>
+      <div class="wrap">
+
+        <!-- Numbers strip -->
+        <div class="stat4">
+          <div>
+            <b class="disp">8</b>
+            <span>Students max per class</span>
+          </div>
+          <div>
+            <b class="disp">3</b>
+            <span>Branches: Riyadh · Jeddah · Khobar</span>
+          </div>
+          <div>
+            <b class="disp">4</b>
+            <span>Programs, beginner to pro</span>
+          </div>
+          <div>
+            <b class="disp">10+</b>
+            <span>Years of experience in our team</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">WHY US</div>
+          <h2 class="disp">Why Top Beauty?</h2>
+          <p></p>
+        </div>
+
+        <!-- Feature cards -->
+        <div class="inc">
+          <div>
+            <h3>Hands-on training</h3>
+            <p>You practise on real models from week one.</p>
+          </div>
+          <div>
+            <h3>Certified</h3>
+            <p>A certificate you can add to your portfolio.</p>
+          </div>
+          <div>
+            <h3>Small groups</h3>
+            <p>Every student gets full attention.</p>
+          </div>
+          <div>
+            <h3>Clean tool kit</h3>
+            <p>Each student gets a kit of her own.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap sec two">
+        <div class="photo">
+          <img src="ac-bath.jpg" alt="" loading="lazy">
+        </div>
+        <div>
+          <div class="eyebrow">WHERE YOU LEARN</div>
+          <h2 class="disp">Learn in a place that inspires you</h2>
+          <p>Calm, bright classrooms inside the sanctuary make focus easier and creativity closer. Here, spa calm meets pro precision.</p>
+        </div>
+      </div>
+
+      <!-- Call-to-action banner -->
+      <div class="wrap cta">
+        <div class="in">
+          <h2 class="disp">Ready to begin?</h2>
+          <p>Visit any branch for free and see the classrooms yourself.</p>
+          <a class="btn big" href="#book">Book a free visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTRUCTORS PAGE ================= -->
+    <section class="view" id="v-instructors">
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">OUR INSTRUCTORS</div>
+          <h2 class="disp">Learn from artists who actually work in the field</h2>
+          <p>Certified artists with years of experience, sharing real industry secrets—not just theory.</p>
+        </div>
+
+        <!-- Instructor cards -->
+        <div class="igrid">
+          <article class="ic">
+            <div class="ban">
+              <img src="ac-orchid.jpg" alt="" loading="lazy">
+            </div>
+            <div class="av disp">R</div>
+            <div class="cb">
+              <h3>Reem Al-Harbi</h3>
+              <span class="tag">Bridal makeup · 10 years</span>
+              <p>Trained in Paris. Loves natural, long-lasting bridal looks.</p>
+              <div class="chips">
+                <span class="chip">Bridal look</span>
+                <span class="chip">Long wear</span>
+                <span class="chip">Natural skin</span>
+              </div>
+              <a class="btn" href="#book">Book your course</a>
+            </div>
+          </article>
+          <article class="ic">
+            <div class="ban">
+              <img src="ac-jars.jpg" alt="" loading="lazy">
+            </div>
+            <div class="av disp">M</div>
+            <div class="cb">
+              <h3>Maha Al-Otaibi</h3>
+              <span class="tag">Skin & skin tones · 8 years</span>
+              <p>Specialist in glowing-skin looks inspired by Korean beauty.</p>
+              <div class="chips">
+                <span class="chip">Glow skin</span>
+                <span class="chip">Skin tones</span>
+                <span class="chip">Skin prep</span>
+              </div>
+              <a class="btn" href="#book">Book your course</a>
+            </div>
+          </article>
+          <article class="ic">
+            <div class="ban">
+              <img src="ac-towels.jpg" alt="" loading="lazy">
+            </div>
+            <div class="av disp">L</div>
+            <div class="cb">
+              <h3>Laila Al-Dosari</h3>
+              <span class="tag">Evening & editorial · 12 years</span>
+              <p>Works with photographers and fashion brands across the Gulf.</p>
+              <div class="chips">
+                <span class="chip">Evening</span>
+                <span class="chip">Editorial</span>
+                <span class="chip">Portfolio</span>
+              </div>
+              <a class="btn" href="#book">Book your course</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Call-to-action banner -->
+      <div class="wrap cta">
+        <div class="in">
+          <h2 class="disp">Learn from the best</h2>
+          <p>Three instructors, three schools of thought, one path to pro.</p>
+          <a class="btn big" href="#courses">Pick your course</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT & BOOKING PAGE ================= -->
+    <section class="view" id="v-book">
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">CONTACT & BOOKING</div>
+          <h2 class="disp">Reserve your seat before it fills</h2>
+          <p>Leave your details and we’ll reach you within 24 hours—or choose a free visit to see the academy yourself.</p>
+        </div>
+
+        <!-- Booking form + branches -->
+        <div class="bgrid2">
+          <form id="f">
+            <h3 class="disp">Your details</h3>
+            <label for="n">Full name</label>
+            <input id="n" required>
+            <label for="p">Mobile number</label>
+            <input id="p" type="tel" dir="ltr" placeholder="+966 5x xxx xxxx" required>
+            <label for="c">Course</label>
+            <select id="c">
+              <option>Makeup Basics</option>
+              <option>Bridal & Evening Makeup</option>
+              <option>Skincare & Skin Tones</option>
+              <option>Professional Makeup Artist Diploma</option>
+              <option>Custom course</option>
+              <option>Free visit only</option>
+            </select>
+            <label for="b">Branch</label>
+            <select id="b">
+              <option>Riyadh · Hittin</option>
+              <option>Jeddah · Al Shati</option>
+              <option>Khobar · Corniche</option>
+            </select>
+            <label for="d">Preferred date</label>
+            <input id="d" type="date">
+            <p><button class="btn big" type="submit">Send booking request</button></p>
+            <div class="ok" id="ok">Thank you! We will contact you within 24 hours.</div>
+          </form>
+          <div>
+
+            <!-- Free visit card -->
+            <div class="promo">
+              <img src="ac-towels.jpg" alt="">
+              <div>
+                <h3 class="disp">A free visit—no commitment</h3>
+                <p>See the classrooms and talk to our instructors before you decide.</p>
+              </div>
+            </div>
+            <h3 class="disp bt">Our branches</h3>
+            <div class="bc">
+              <b>Riyadh — Hittin Flagship</b>
+              <span>10:00 AM – 11:00 PM</span>
+              <a href="tel:+966114908800" dir="ltr">+966 11 490 8800</a>
+            </div>
+            <div class="bc">
+              <b>Jeddah — Al Shati Waterfront</b>
+              <span>10:00 AM – 11:30 PM</span>
+              <a href="tel:+966126104400" dir="ltr">+966 12 610 4400</a>
+            </div>
+            <div class="bc">
+              <b>Al Khobar — North Corniche</b>
+              <span>11:00 AM – 10:30 PM</span>
+              <a href="tel:+966138452200" dir="ltr">+966 13 845 2200</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="foot"><div class="wrap">
+  <div class="fb"><img src="top-beauty-logo-dark.png" alt="Top Beauty"><p>Top Beauty Academy: learn, practise and launch your makeup career.</p></div>
+  <div class="blist"><div><b>Riyadh — Hittin Flagship</b><span>10:00 AM – 11:00 PM</span><span dir="ltr" style="text-align:left">+966 11 490 8800</span></div><div><b>Jeddah — Al Shati Waterfront</b><span>10:00 AM – 11:30 PM</span><span dir="ltr" style="text-align:left">+966 12 610 4400</span></div><div><b>Al Khobar — North Corniche</b><span>11:00 AM – 10:30 PM</span><span dir="ltr" style="text-align:left">+966 13 845 2200</span></div></div>
+  <div class="fine"><span>© 2026 Top Beauty Saudi Arabia · All Rights Reserved</span><span>Chilled KSA Shipping · Tamara &amp; Tabby</span></div>
+</div></footer>
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer"><div class="dh"><h3 class="disp">Your Beauty Bag</h3><button id="close" aria-label="close">×</button></div><div id="ship" class="ship"></div><div id="items"></div><div class="df"><div class="rowsp"><span>Subtotal</span><b id="sub" class="mono"></b></div><button class="btn w2" id="checkout">Checkout · Mada / Apple Pay / Tamara</button><small id="chk"></small></div></aside>
+<script src="script.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top Beauty | واحة الجمال والعافية وأكاديمية المكياج</title>
+<link rel="icon" href="top-beauty-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<header class="top"><div class="wrap bar"><a class="brand" href="#home"><img src="top-beauty-logo.png" alt="Top Beauty"><span><b>TOP BEAUTY</b><small>أكاديمية المكياج</small></span></a><nav class="links" id="menu"><a data-v="courses" href="#courses">الدورات</a><a data-v="about" href="#about">من نحن</a><a data-v="instructors" href="#instructors">المدرّبات</a><a data-v="book" href="#book">تواصل واحجزي</a><a class="rit" href="#home#builder">صمّمي دورتك</a><div class="dd" id="dd"><button type="button" id="ddb" aria-expanded="false">المزيد <i>▾</i></button><div class="ddm"><a href="#home#shop">متجر Top Beauty</a><a href="#home#sanctuary">الأسئلة الشائعة</a><a href="#home#stories">آراء الطالبات</a></div></div></nav><div class="acts"><button class="pillbtn" id="cartBtn"><span class="dot" id="cartN">1</span><span>الحقيبة</span></button><a class="langl" id="otherlang" data-to="en.html" href="en.html">EN</a><button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button></div></div></header>
+<main>
+    <!-- ================= HOME PAGE ================= -->
+    <section class="view" id="v-home">
+
+      <!-- Hero (top of home) -->
+      <div class="wrap hero">
+        <div class="hl">
+          <span class="chip">أكاديمية Top Beauty · الرياض · جدة · الخبر</span>
+          <h1 class="disp"><span>تعلّمي المكياج باحتراف،</span><span class="grad">وابدئي مهنتك بثقة.</span></h1>
+          <p class="lead">دورات مكياج احترافية بتدريب عملي وشهادة معتمدة، داخل واحة هادئة تجمع بين التعلّم والعناية بنفسك — ومعها منتجات Top Beauty النقية لتكتمل رحلتك.</p>
+          <div class="ctas">
+            <a class="btn big" href="#courses"><span>شاهدي الدورات</span> <i class="arr">←</i></a>
+            <a class="btn o big" href="#home#builder">صمّمي دورتك</a>
+          </div>
+          <div class="stats">
+            <div>
+              <b class="disp">٨</b>
+              <span>طالبات كحد أقصى في الفصل</span>
+            </div>
+            <div>
+              <b class="disp">٣</b>
+              <span>فروع في المملكة</span>
+            </div>
+            <div>
+              <b class="disp">٤</b>
+              <span>دورات من المبتدئة للمحترفة</span>
+            </div>
+          </div>
+        </div>
+        <div class="arch">
+          <img src="orchid-hero.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Build-your-course tool (options come from script.js) -->
+      <div class="builder" id="builder">
+        <div class="wrap">
+          <div class="head">
+            <div class="eyebrow">أداة تفاعلية</div>
+            <h2 class="disp">صمّمي دورتك على مقاس طموحك</h2>
+            <p>اختاري تخصصك وشكل الفصل والإضافات التي تريدينها، وشاهدي السعر فوراً قبل أن تحجزي.</p>
+          </div>
+          <div class="bgrid">
+            <div class="panel">
+              <div class="step">١. ما التخصص الذي يشدّك؟</div>
+              <div class="opts c3" id="g1"></div>
+              <div class="step">٢. اختاري شكل الفصل</div>
+              <div class="opts c3" id="g2"></div>
+              <div class="step">٣. أضيفي ما يرفع مهارتك</div>
+              <div class="opts c2" id="g3"></div>
+            </div>
+            <aside class="sum">
+              <div class="sh">
+                <small>ملخص دورتك</small>
+                <h3 class="disp" id="sT"></h3>
+              </div>
+              <ul>
+                <li><span>شكل الفصل</span><b id="sM"></b></li>
+                <li><span>الإضافات</span><b id="sE"></b></li>
+                <li><span>الشهادة</span><b>معتمدة · مشمولة</b></li>
+              </ul>
+              <div class="tot">
+                <small>الإجمالي شامل الضريبة</small>
+                <strong class="mono" id="sP"></strong>
+                <small id="sQ"></small>
+                <em>tamara · tabby</em>
+              </div>
+              <a class="btn w" href="#book">احجزي هذه الدورة الآن</a>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop section (products come from script.js) -->
+      <div class="wrap sec" id="shop">
+        <div class="rowhead">
+          <div>
+            <div class="eyebrow">متجر Top Beauty</div>
+            <h2 class="disp">منتجات نتدرّب بها… وتأخذينها معك</h2>
+          </div>
+          <button class="pillbtn" id="cartBtn2"><span>عرض حقيبة التسوق</span> (<span id="cartN2">1</span>)</button>
+        </div>
+        <div class="g4" id="prods"></div>
+      </div>
+
+      <!-- FAQ section (questions come from script.js) -->
+      <div class="wrap sec two" id="sanctuary">
+        <div>
+          <div class="eyebrow">قبل أن تسجّلي</div>
+          <h2 class="disp">أسئلة شائعة عن الدورات</h2>
+          <div id="faq"></div>
+        </div>
+        <div class="photo">
+          <img src="orchid-spa.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Student stories (quotes come from script.js) -->
+      <div class="stories" id="stories">
+        <div class="wrap">
+          <div class="rowhead">
+            <div>
+              <div class="eyebrow">آراء طالباتنا</div>
+              <h2 class="disp">قصص نجاح بدأت من فصلنا</h2>
+            </div>
+            <div class="arrows">
+              <button id="prev" aria-label="prev">‹</button>
+              <button id="next" aria-label="next">›</button>
+            </div>
+          </div>
+          <div class="track" id="track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COURSES PAGE ================= -->
+    <section class="view" id="v-courses">
+
+      <!-- Page intro (text + image) -->
+      <div class="wrap phero">
+        <div>
+          <div class="eyebrow">أكاديمية Top Beauty</div>
+          <h2 class="disp">من شغف المكياج… إلى مهنة تكسبين منها</h2>
+          <p>أربع دورات تأخذك من أول فرشاة إلى أول عميلة. اختاري نقطة البداية، وسنكمل معكِ الطريق.</p>
+          <div class="chips">
+            <span class="chip">شهادة معتمدة</span>
+            <span class="chip">موديلات حقيقية</span>
+            <span class="chip">٨ مقاعد فقط</span>
+          </div>
+          <div class="ctas">
+            <a class="btn big" href="#book">احجزي مقعدك</a>
+            <a class="btn o big" href="#courses#course-list">قارني الدورات</a>
+          </div>
+        </div>
+        <div class="pimgx">
+          <img src="ac-bottles.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Course cards -->
+      <div class="wrap sec" id="course-list">
+        <div class="head">
+          <div class="eyebrow">اختاري دورتك</div>
+          <h2 class="disp">أي مكياجيرة تريدين أن تكوني؟</h2>
+          <p>لكل هدف دورة، ولكل دورة نتيجة تراها بعينيك.</p>
+        </div>
+
+        <!-- Course cards grid -->
+        <div class="cgrid">
+          <article class="cc">
+            <img src="ac-bottles.jpg" alt="أساسيات المكياج" loading="lazy">
+            <div class="cb">
+              <span class="tag">مبتدئات · ٤ أسابيع</span>
+              <h3>أساسيات المكياج</h3>
+              <p class="hk">ابدئي من الصفر… وانتهي بإطلالة تفتخرين بها</p>
+              <ul class="pts">
+                <li>تجهيز البشرة وفهم نوعها</li>
+                <li>فاونديشن وكونسيلر بإتقان</li>
+                <li>عيون وشفاه لإطلالات يومية</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">٢٬٨٠٠ ر.س</b>
+                <a class="btn" href="#book">احجزي</a>
+              </div>
+            </div>
+          </article>
+          <article class="cc">
+            <img src="about_uss.jpg" alt="مكياج العرائس والسهرات" loading="lazy">
+            <div class="cb">
+              <span class="tag">متوسط · ٦ أسابيع</span>
+              <h3>مكياج العرائس والسهرات</h3>
+              <p class="hk">إطلالات تبقى مثالية من الزفّة حتى آخر صورة</p>
+              <ul class="pts">
+                <li>إطلالة العروس خطوة بخطوة</li>
+                <li>كونتور وهايلايت للسهرات</li>
+                <li>تركيب الرموش وثبات طويل</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">٤٬٥٠٠ ر.س</b>
+                <a class="btn" href="#book">احجزي</a>
+              </div>
+            </div>
+          </article>
+          <article class="cc">
+            <img src="ac-bath.jpg" alt="العناية بالبشرة ودرجاتها" loading="lazy">
+            <div class="cb">
+              <span class="tag">كل المستويات · أسبوعان</span>
+              <h3>العناية بالبشرة ودرجاتها</h3>
+              <p class="hk">البشرة الجميلة أساس كل مكياج ناجح</p>
+              <ul class="pts">
+                <li>اختيار الدرجة المناسبة لكل بشرة</li>
+                <li>روتين تحضير يناسب مناخ الخليج</li>
+                <li>منتجات تناسب كل نوع بشرة</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">١٬٩٠٠ ر.س</b>
+                <a class="btn" href="#book">احجزي</a>
+              </div>
+            </div>
+          </article>
+          <article class="cc">
+            <img src="ac-pool.jpg" alt="دبلوم الميك أب أرتست" loading="lazy">
+            <div class="cb">
+              <span class="tag">متقدم · ٨ أسابيع</span>
+              <h3>دبلوم الميك أب أرتست</h3>
+              <p class="hk">البرنامج الكامل لمن تريد أن تصبح اسماً في السوق</p>
+              <ul class="pts">
+                <li>جلسة تصوير لبورتفوليو احترافي</li>
+                <li>مهارات التسعير والتعامل مع العميلات</li>
+                <li>تدريب مكثّف على موديلات حقيقية</li>
+              </ul>
+              <div class="pf">
+                <b class="mono">٨٬٩٠٠ ر.س</b>
+                <a class="btn" href="#book">احجزي</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- What is included -->
+      <div class="band">
+        <div class="wrap">
+          <div class="head">
+            <div class="eyebrow">مشمول في الدورة</div>
+            <h2 class="disp">كل ما تحتاجينه… داخل الدورة</h2>
+            <p>لا مفاجآت ولا تكاليف خفية.</p>
+          </div>
+
+          <!-- Feature cards -->
+          <div class="inc">
+            <div>
+              <h3>حقيبة أدوات نظيفة</h3>
+              <p>لكل طالبة حقيبتها الخاصة بأدوات معقّمة.</p>
+            </div>
+            <div>
+              <h3>موديلات حقيقية</h3>
+              <p>تتدرّبين من الأسبوع الأول لا في نهاية الدورة.</p>
+            </div>
+            <div>
+              <h3>شهادة معتمدة</h3>
+              <p>تضيفينها إلى ملفّك المهني.</p>
+            </div>
+            <div>
+              <h3>ماركات احترافية</h3>
+              <p>منتجات تناسب بشرة الخليج وأجوائه.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">رحلتك</div>
+          <h2 class="disp">من الصفر إلى أول عميلة في ٤ خطوات</h2>
+          <p></p>
+        </div>
+
+        <!-- Journey steps -->
+        <div class="steps">
+          <div>
+            <b>١</b>
+            <h3>تعلّمي</h3>
+            <p>خطوة بخطوة وبلغة بسيطة.</p>
+          </div>
+          <div>
+            <b>٢</b>
+            <h3>تدرّبي</h3>
+            <p>على موديلات حقيقية.</p>
+          </div>
+          <div>
+            <b>٣</b>
+            <h3>تخرّجي</h3>
+            <p>بشهادة معتمدة.</p>
+          </div>
+          <div>
+            <b>٤</b>
+            <h3>انطلقي</h3>
+            <p>ببورتفوليو وأول عميلاتك.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call-to-action banner -->
+      <div class="wrap cta">
+        <div class="in">
+          <h2 class="disp">مقعدك ينتظرك… قبل أن يكتمل الفصل</h2>
+          <p>٨ طالبات فقط في كل فصل. احجزي الآن أو زوري أحد فروعنا في زيارة مجانية.</p>
+          <a class="btn big" href="#book">احجزي مقعدك الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT US PAGE ================= -->
+    <section class="view" id="v-about">
+
+      <!-- Page intro (text + image) -->
+      <div class="wrap phero">
+        <div>
+          <div class="eyebrow">من نحن</div>
+          <h2 class="disp">نصنع فنّانات مكياج… لا مجرّد متدرّبات</h2>
+          <p>في أكاديمية Top Beauty نحوّل شغفك بالمكياج إلى مهنة حقيقية، خطوة بخطوة وبلغة بسيطة، وبتقنيات حديثة تناسب بشرة الخليج وأجوائه.</p>
+          <p>ندرّس داخل واحة هادئة ومضيئة، بماركات احترافية، وفي مجموعات صغيرة ليحظى كل إبداع باهتمامه.</p>
+          <div class="ctas">
+            <a class="btn big" href="#courses">شاهدي الدورات</a>
+            <a class="btn o big" href="#book">احجزي زيارة مجانية</a>
+          </div>
+        </div>
+        <div class="pimgx">
+          <img src="about_uss.jpg" alt="">
+        </div>
+      </div>
+      <div class="wrap">
+
+        <!-- Numbers strip -->
+        <div class="stat4">
+          <div>
+            <b class="disp">٨</b>
+            <span>طالبات كحد أقصى في الفصل</span>
+          </div>
+          <div>
+            <b class="disp">٣</b>
+            <span>فروع: الرياض · جدة · الخبر</span>
+          </div>
+          <div>
+            <b class="disp">٤</b>
+            <span>برامج من المبتدئة إلى المحترفة</span>
+          </div>
+          <div>
+            <b class="disp">+١٠</b>
+            <span>سنوات خبرة لمدرّباتنا</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">لماذا نحن</div>
+          <h2 class="disp">لماذا Top Beauty؟</h2>
+          <p></p>
+        </div>
+
+        <!-- Feature cards -->
+        <div class="inc">
+          <div>
+            <h3>تدريب عملي</h3>
+            <p>تتدرّبين على موديلات حقيقية من الأسبوع الأول.</p>
+          </div>
+          <div>
+            <h3>شهادة معتمدة</h3>
+            <p>شهادة تضيفينها إلى ملفّك المهني.</p>
+          </div>
+          <div>
+            <h3>مجموعات صغيرة</h3>
+            <p>كل طالبة تحصل على اهتمام كامل.</p>
+          </div>
+          <div>
+            <h3>حقيبة أدوات نظيفة</h3>
+            <p>لكل طالبة حقيبة أدوات خاصة بها.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap sec two">
+        <div class="photo">
+          <img src="ac-bath.jpg" alt="" loading="lazy">
+        </div>
+        <div>
+          <div class="eyebrow">مكان الدراسة</div>
+          <h2 class="disp">ادرسي في مكان يُلهمك</h2>
+          <p>قاعات هادئة ومضيئة داخل الواحة تجعل التركيز أسهل والإبداع أقرب. هنا يلتقي هدوء السبا بدقّة المحترفات.</p>
+        </div>
+      </div>
+
+      <!-- Call-to-action banner -->
+      <div class="wrap cta">
+        <div class="in">
+          <h2 class="disp">جاهزة لتبدئي؟</h2>
+          <p>زوري أحد فروعنا مجاناً وشاهدي القاعات بنفسك.</p>
+          <a class="btn big" href="#book">احجزي زيارة مجانية</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTRUCTORS PAGE ================= -->
+    <section class="view" id="v-instructors">
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">مدرّباتنا</div>
+          <h2 class="disp">تتعلّمين من اللواتي يعملن في الميدان فعلاً</h2>
+          <p>خبيرات معتمدات بسنوات من الخبرة، يشاركنك أسرار المهنة لا النظريات فقط.</p>
+        </div>
+
+        <!-- Instructor cards -->
+        <div class="igrid">
+          <article class="ic">
+            <div class="ban">
+              <img src="ac-orchid.jpg" alt="" loading="lazy">
+            </div>
+            <div class="av disp">ر</div>
+            <div class="cb">
+              <h3>ريم الحربي</h3>
+              <span class="tag">مكياج عرائس · ١٠ سنوات</span>
+              <p>تدرّبت في باريس، وتعشق إطلالات العرائس الطبيعية طويلة الثبات.</p>
+              <div class="chips">
+                <span class="chip">إطلالة العروس</span>
+                <span class="chip">ثبات طويل</span>
+                <span class="chip">بشرة طبيعية</span>
+              </div>
+              <a class="btn" href="#book">احجزي دورتك</a>
+            </div>
+          </article>
+          <article class="ic">
+            <div class="ban">
+              <img src="ac-jars.jpg" alt="" loading="lazy">
+            </div>
+            <div class="av disp">م</div>
+            <div class="cb">
+              <h3>مها العتيبي</h3>
+              <span class="tag">بشرة ودرجاتها · ٨ سنوات</span>
+              <p>متخصصة في إطلالات البشرة المشرقة المستوحاة من الجمال الكوري.</p>
+              <div class="chips">
+                <span class="chip">بشرة مشرقة</span>
+                <span class="chip">درجات البشرة</span>
+                <span class="chip">تحضير البشرة</span>
+              </div>
+              <a class="btn" href="#book">احجزي دورتك</a>
+            </div>
+          </article>
+          <article class="ic">
+            <div class="ban">
+              <img src="ac-towels.jpg" alt="" loading="lazy">
+            </div>
+            <div class="av disp">ل</div>
+            <div class="cb">
+              <h3>ليلى الدوسري</h3>
+              <span class="tag">سهرات وفوتوشوت · ١٢ سنة</span>
+              <p>تعمل مع مصوّرين وبراندات أزياء في الخليج.</p>
+              <div class="chips">
+                <span class="chip">سهرات</span>
+                <span class="chip">فوتوشوت</span>
+                <span class="chip">بورتفوليو</span>
+              </div>
+              <a class="btn" href="#book">احجزي دورتك</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Call-to-action banner -->
+      <div class="wrap cta">
+        <div class="in">
+          <h2 class="disp">تعلّمي على أيدي الأفضل</h2>
+          <p>ثلاث مدرّبات، ثلاث مدارس، وطريق واحد إلى الاحتراف.</p>
+          <a class="btn big" href="#courses">اختاري دورتك</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT & BOOKING PAGE ================= -->
+    <section class="view" id="v-book">
+      <div class="wrap sec">
+        <div class="head">
+          <div class="eyebrow">تواصل وحجز</div>
+          <h2 class="disp">احجزي مقعدك قبل أن يكتمل</h2>
+          <p>اتركي بياناتك وسنتواصل معك خلال ٢٤ ساعة، أو اختاري زيارة مجانية لتري الأكاديمية بنفسك.</p>
+        </div>
+
+        <!-- Booking form + branches -->
+        <div class="bgrid2">
+          <form id="f">
+            <h3 class="disp">بيانات الحجز</h3>
+            <label for="n">الاسم الكامل</label>
+            <input id="n" required>
+            <label for="p">رقم الجوال</label>
+            <input id="p" type="tel" dir="ltr" placeholder="+966 5x xxx xxxx" required>
+            <label for="c">الدورة</label>
+            <select id="c">
+              <option>أساسيات المكياج</option>
+              <option>مكياج العرائس والسهرات</option>
+              <option>العناية بالبشرة ودرجاتها</option>
+              <option>دبلوم الميك أب أرتست</option>
+              <option>دورة مخصصة</option>
+              <option>زيارة مجانية فقط</option>
+            </select>
+            <label for="b">الفرع</label>
+            <select id="b">
+              <option>الرياض · حطين</option>
+              <option>جدة · الشاطئ</option>
+              <option>الخبر · الكورنيش</option>
+            </select>
+            <label for="d">التاريخ المناسب</label>
+            <input id="d" type="date">
+            <p><button class="btn big" type="submit">أرسلي طلب الحجز</button></p>
+            <div class="ok" id="ok">شكراً لك! سنتواصل معك خلال ٢٤ ساعة.</div>
+          </form>
+          <div>
+
+            <!-- Free visit card -->
+            <div class="promo">
+              <img src="ac-towels.jpg" alt="">
+              <div>
+                <h3 class="disp">زيارة مجانية… بلا التزام</h3>
+                <p>زوري القاعات وتحدّثي مع مدرّباتنا قبل أن تقرّري.</p>
+              </div>
+            </div>
+            <h3 class="disp bt">فروعنا</h3>
+            <div class="bc">
+              <b>الرياض — حي حطين (البوليفارد)</b>
+              <span>١٠:٠٠ ص – ١١:٠٠ م</span>
+              <a href="tel:+966114908800" dir="ltr">+966 11 490 8800</a>
+            </div>
+            <div class="bc">
+              <b>جدة — حي الشاطئ (طريق الملك)</b>
+              <span>١٠:٠٠ ص – ١١:٣٠ م</span>
+              <a href="tel:+966126104400" dir="ltr">+966 12 610 4400</a>
+            </div>
+            <div class="bc">
+              <b>الخبر — الكورنيش الشمالي</b>
+              <span>١١:٠٠ ص – ١٠:٣٠ م</span>
+              <a href="tel:+966138452200" dir="ltr">+966 13 845 2200</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="foot"><div class="wrap">
+  <div class="fb"><img src="top-beauty-logo-dark.png" alt="Top Beauty"><p>أكاديمية Top Beauty: تعلّمي، تدرّبي، وابدئي مهنتك في المكياج.</p></div>
+  <div class="blist"><div><b>الرياض — حي حطين (البوليفارد)</b><span>١٠:٠٠ ص – ١١:٠٠ م</span><span dir="ltr" style="text-align:right">+966 11 490 8800</span></div><div><b>جدة — حي الشاطئ (طريق الملك)</b><span>١٠:٠٠ ص – ١١:٣٠ م</span><span dir="ltr" style="text-align:right">+966 12 610 4400</span></div><div><b>الخبر — الكورنيش الشمالي</b><span>١١:٠٠ ص – ١٠:٣٠ م</span><span dir="ltr" style="text-align:right">+966 13 845 2200</span></div></div>
+  <div class="fine"><span>© ٢٠٢٦ Top Beauty المملكة العربية السعودية · جميع الحقوق محفوظة</span><span>شحن مبرد لجميع مناطق المملكة · تمارا وتابي</span></div>
+</div></footer>
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer"><div class="dh"><h3 class="disp">حقيبة Top Beauty</h3><button id="close" aria-label="close">×</button></div><div id="ship" class="ship"></div><div id="items"></div><div class="df"><div class="rowsp"><span>الإجمالي الفرعي</span><b id="sub" class="mono"></b></div><button class="btn w2" id="checkout">إتمام الطلب · مدى / Apple Pay / تمارا</button><small id="chk"></small></div></aside>
+<script src="script.js?v=4"></script>
+</body>
+</html>
